@@ -43,9 +43,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
      LSFT, A  , S  , D  , F  , G  ,                H  , J  , K  , L  ,SCLN,QUOT,
   //|----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
-     LCTL, Z  , X  , C  , V  , B  ,HOME,         , N  , M  ,COMM,DOT ,SLSH,RSFT,
+     LCTL, Z  , X  , C  , V  , B  ,ENT ,         , N  , M  ,COMM,DOT ,SLSH,RSFT,
   //`----+----+----+--+-+----+----+----/    \----+----+----+----+----+----+----'
-                       LGUI,LOWR,ENT ,         SPC ,RASE,LALT
+                       LGUI,LOWR,SPC ,         SPC ,RASE,LALT
   //                  `----+----+----'        `----+----+----'
   ),
 
@@ -53,9 +53,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,----+----+----+----+----+----.              ,----+----+----+----+----+----.
      TILD,EXLM, AT ,HASH,DLR ,PERC,               CIRC,AMPR,ASTR,LPRN,RPRN,BSPC,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-     RST , 1  , 2  , UP , 4  , 5  ,               NLCK, P7 , P8 , P9 ,MINS,BSLS,
+     RST , 1  , 2  , UP , 4  , 5  ,               NLCK, P7 , P8 , P9 ,PMNS,BSLS,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-     LSFT,    ,LEFT,DOWN,RGHT,LCBR,               RBRC, P4 , P5 , P6 ,PLUS,    ,
+     LSFT,    ,LEFT,DOWN,RGHT,LCBR,               RBRC, P4 , P5 , P6 ,PPLS,    ,
   //|----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
      BL_S,    ,    ,    ,    ,LBRC,LPRN,         ,RCBR, P1 , P2 , P3 ,PEQL,RSFT,
   //`----+----+----+--+-+----+----+----/    \----+----+----+----+----+----+----'
