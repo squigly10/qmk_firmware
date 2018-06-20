@@ -22,8 +22,8 @@ enum custom_keycodes {
 
 #define KC_LOWR LOWER
 #define KC_RASE RAISE
-#define KC_GAME TO(_GAME)
-#define KC_QWRT TO(_QWERTY)
+#define KC_GAME TG(_GAME)
+#define KC_QWRT TG(_QWERTY)
 #define KC_RST RESET
 #define KC_BL_S BL_STEP
 #define KC_DBUG DEBUG

@@ -4,27 +4,25 @@
 
 extern keymap_config_t keymap_config;
 
-#define _QWERTY 0
-#define _LOWER  1
-#define _RAISE  2
-#define _ADJUST 16
-#define _GAME   3
 
-enum custom_keycodes {
-  QWERTY = SAFE_RANGE,
-  LOWER,
-  RAISE,
-  ADJUST,
-};
+#define _QWERTY 0
+#define _LOWER 1
+#define _RAISE 2
+#define _ADJUST 3
+#define _GAME 4
+#define _NAVIGATION 5
+
 
 #define KC_ KC_TRNS
 #define _______ KC_TRNS
 
-#define KC_LOWR LOWER
-#define KC_RASE RAISE
+#define KC_ADJT MO(_ADJUST)
+#define KC_RASE MO(_RAISE)
 #define KC_GAME TO(_GAME)
+#define KC_LOWR MO(_LOWER)
 #define KC_QWRT TO(_QWERTY)
-#define KC_RST RESET
+#define KC_NAVI TO(_NAVIGATION)
+#define KC_RST  RESET
 #define KC_BL_S BL_STEP
 #define KC_DBUG DEBUG
 #define KC_RTOG RGB_TOG
@@ -56,7 +54,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,----+----+----+----+----+----.              ,----+----+----+----+----+----.
      TILD,EXLM, AT ,HASH,DLR ,PERC,               CIRC,AMPR,ASTR,LPRN,RPRN,BSPC,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-     RST , 1  , 2  , UP , 4  , 5  ,               NLCK, P7 , P8 , P9 ,PMNS,BSLS,
+     RST , 1  , 2  , UP , 4  , 5  ,               NAVI, P7 , P8 , P9 ,PMNS,BSLS,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
      LSFT,    ,LEFT,DOWN,RGHT,LCBR,               RBRC, P4 , P5 , P6 ,PPLS,GAME,
   //|----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
@@ -106,51 +104,21 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //`----+----+----+--+-+----+----+----/    \----+----+----+----+----+----+----'
                        LGUI,LOWR,SPC ,         SPC ,RASE,LALT
   //                  `----+----+----'        `----+----+----'
+  ),
+  
+    [_NAVIGATION] = LAYOUT_kc(
+  //,----+----+----+----+----+----.              ,--------+-------+-------+--------+----+----.
+     GESC, 1  , 2  , 3  , 4  , 5  ,                6      , 7     , 8     , 9      , 0  ,BSPC,
+  //|----+----+----+----+----+----|              |--------+-------+-------+--------+----+----|
+     TAB ,    ,    , UP ,    ,    ,               MS_WH_UP,MS_BTN2,MS_UP  ,MS_BTN3 ,    ,QWRT,
+  //|----+----+----+----+----+----|              |--------+-------+-------+--------+----+----|
+     LSFT, A  ,LEFT,DOWN,RGHT,    ,               MS_BTN1 ,MS_LEFT,MS_DOWN,MS_RIGHT,    ,QUOT,
+  //|----+----+----+----+----+----+----.    ,----|--------+-------+-------+--------+----+----|
+     LCTL,    ,    ,    ,    ,    ,SPC ,    ,   MS_WH_DOWN,       ,       ,        ,    ,RSFT,
+  //`----+----+----+--+-+----+----+----/    \----+--------+-------+-------+--------+----+----'
+                       LGUI,LOWR,ENT ,         SPC ,RASE  ,LALT
+  //                  `----+----+----'        `----+------+----'
   )
 
 };
 
-void persistent_default_layer_set(uint16_t default_layer) {
-  eeconfig_update_default_layer(default_layer);
-  default_layer_set(default_layer);
-}
-
-bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-  switch (keycode) {
-    case QWERTY:
-      if (record->event.pressed) {
-        persistent_default_layer_set(1UL<<_QWERTY);
-      }
-      return false;
-      break;
-    case LOWER:
-      if (record->event.pressed) {
-        layer_on(_LOWER);
-        update_tri_layer(_LOWER, _RAISE, _ADJUST);
-      } else {
-        layer_off(_LOWER);
-        update_tri_layer(_LOWER, _RAISE, _ADJUST);
-      }
-      return false;
-      break;
-    case RAISE:
-      if (record->event.pressed) {
-        layer_on(_RAISE);
-        update_tri_layer(_LOWER, _RAISE, _ADJUST);
-      } else {
-        layer_off(_RAISE);
-        update_tri_layer(_LOWER, _RAISE, _ADJUST);
-      }
-      return false;
-      break;
-    case ADJUST:
-      if (record->event.pressed) {
-        layer_on(_ADJUST);
-      } else {
-        layer_off(_ADJUST);
-      }
-      return false;
-      break;
-  }
-  return true;
-}
