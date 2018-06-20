@@ -1,0 +1,300 @@
+[
+  {
+    "name": "IRIS",
+    "switchMount": "cherry",
+    "switchBrand": "cherry",
+    "switchType": "MX1A-G1xx",
+    "pcb": true
+  },
+  [
+    {
+      "x": 3
+    },
+    "F3\n\n\n\n\n\n3\n\n\n#",
+    {
+      "x": 10
+    },
+    "F8\n\n\n\n\n\n8\n\n\n*"
+  ],
+  [
+    {
+      "y": -0.75,
+      "x": 2
+    },
+    "F2\n\n\n\n\n\n2\n\n\n@",
+    {
+      "x": 1
+    },
+    "F4\n\n\n\n\n\n4\n\n\n$",
+    {
+      "x": 8
+    },
+    "F7\n\n\n\n\n\n7\n\n\n&",
+    {
+      "x": 1
+    },
+    "F9\n\n\n\n\n\n9\n\n\n("
+  ],
+  [
+    {
+      "y": -0.75
+    },
+    "F12\nTILD\n\n\n\n\nGESC",
+    "F1\n\n\n\n\n\n1\n\n\n!",
+    {
+      "x": 3
+    },
+    "F5\n\n\n\n\n\n5\n\n\n%",
+    {
+      "x": 6
+    },
+    "F6\n\n\n\n\n\n6\n\n\n^",
+    {
+      "x": 3
+    },
+    "F10\n\n\n\n\n\n0\n\n\n)",
+    "F11\n\n\n\n\n\nBKSP"
+  ],
+  [
+    {
+      "y": -0.5,
+      "x": 3
+    },
+    "\nUP\n\n\n\n\n.\n\n\n>",
+    {
+      "x": 10
+    },
+    "\nP8\n\n\n\n\nC"
+  ],
+  [
+    {
+      "y": -0.75,
+      "x": 2,
+      "a": 6
+    },
+    ",\n\n\n\n\n\n\n\n<",
+    {
+      "x": 1
+    },
+    "C",
+    {
+      "x": 8,
+      "a": 4
+    },
+    "\nP7\n\n\n\n\nG",
+    {
+      "x": 1
+    },
+    "\nP9\n\n\n\n\nR"
+  ],
+  [
+    {
+      "y": -0.75
+    },
+    "\nRST\n\n\n\n\nTAB",
+    {
+      "a": 6,
+      "fa": [
+        1
+      ]
+    },
+    "'\n\n\n\n\n\n\n\n\"",
+    {
+      "x": 3,
+      "a": 4
+    },
+    "\n\n\n\n\n\nY\n\n(",
+    {
+      "x": 6
+    },
+    "\nNLCK\n\n\n\n\nF\n\n)",
+    {
+      "x": 3
+    },
+    "\nMINS\n\n\n\n\nL",
+    {
+      "f": 3
+    },
+    "\\\n\\\n\n\n\n\nDEL\n\n|\n\n|"
+  ],
+  [
+    {
+      "y": -0.5,
+      "x": 3,
+      "f": 3
+    },
+    "VOLU\nDOWN\n\n\n\n\nE",
+    {
+      "x": 10
+    },
+    "\nP5\n\n\n\n\nT"
+  ],
+  [
+    {
+      "y": -0.75,
+      "x": 2,
+      "f": 3
+    },
+    "MNXT\nLEFT\n\n\n\n\nO",
+    {
+      "x": 1
+    },
+    "\nRIGHT\n\n\n\n\nU",
+    {
+      "x": 8,
+      "f": 3
+    },
+    "HOME\nP4\n\n\n\n\nH",
+    {
+      "x": 1
+    },
+    "\nP6\n\n\n\n\nN"
+  ],
+  [
+    {
+      "y": -0.75,
+      "a": 6,
+      "f": 3
+    },
+    "LSFT",
+    {
+      "a": 4,
+      "f": 3
+    },
+    "MPRV\n\n\n\n\n\nA",
+    {
+      "x": 3
+    },
+    "\n\n\n\n\n\nI\n\n{\n\n?",
+    {
+      "x": 6
+    },
+    "\n\n\n\n\n\nD\n\n]\n\n=",
+    {
+      "x": 3
+    },
+    "\nPLUS\n\n\n\n\nS",
+    {
+      "f": 3
+    },
+    "/\n\n\n\n\n\n-\n\n?\n_"
+  ],
+  [
+    {
+      "y": -0.5,
+      "x": 3,
+      "f": 3
+    },
+    "VOLD\n\n\n\n\n\nJ",
+    {
+      "x": 10
+    },
+    "\nP2\n\n\n\n\nW"
+  ],
+  [
+    {
+      "y": -0.75,
+      "x": 2,
+      "f": 3
+    },
+    "MPLY\n\n\n\n\n\nQ",
+    {
+      "x": 1,
+      "a": 6,
+      "f": 3
+    },
+    "K",
+    {
+      "x": 8,
+      "a": 4,
+      "f": 3
+    },
+    "END\nP1\n\n\n\n\nM",
+    {
+      "x": 1
+    },
+    "\nP3\n\n\n\n\nV"
+  ],
+  [
+    {
+      "y": -0.75,
+      "f": 3
+    },
+    "MUTE\nBL_S\n\n\n\n\nCTRL",
+    {
+      "f": 3
+    },
+    "MSTP\n\n\n\n\n\n;\n\n\n:",
+    {
+      "x": 3
+    },
+    "\n\n\n\n\n\nX\n\n[\n\n/",
+    {
+      "x": 6
+    },
+    "\n\n\n\n\n\nB\n\n}\n\n+",
+    {
+      "x": 3
+    },
+    "\nPEQL\n\n\n\n\nZ",
+    {
+      "a": 6,
+      "f": 3
+    },
+    "RSFT"
+  ],
+  [
+    {
+      "x": 3,
+      "f": 3
+    },
+    "LGUI",
+    {
+      "x": 10,
+      "a": 4
+    },
+    "\nP0\n\n\n\n\nLALT"
+  ],
+  [
+    {
+      "y": -0.75,
+      "x": 4,
+      "a": 6,
+      "f": 3
+    },
+    "LOWR",
+    {
+      "x": 8,
+      "f": 3
+    },
+    "RASE"
+  ],
+  [
+    {
+      "r": 45,
+      "rx": 3,
+      "ry": 12,
+      "y": -11.5,
+      "x": 0.5,
+      "f": 3,
+      "w": 2
+    },
+    "SPACE"
+  ],
+  [
+    {
+      "rx": 4,
+      "y": -7.25,
+      "x": -3.75,
+      "a": 4,
+      "f": 3
+    },
+    "END\nLPRN\n\n\n\n\nHOME"
+  ],
+  [
+    {
+      "x": -3.75
+    },
+    "\nDEL\n\n\n\n\nRET"
+  ]
+]
