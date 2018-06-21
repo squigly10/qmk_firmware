@@ -30,7 +30,8 @@ extern keymap_config_t keymap_config;
 #define KC_DBUG DEBUG
 
 #define KC_RTOG RGB_TOG
-#define KC_RMOD RGB_MOD
+#define KC_RMOD RGB_RMOD
+#define KC_MOD  RGB_MOD
 #define KC_RHUI RGB_HUI
 #define KC_RHUD RGB_HUD
 #define KC_RSAI RGB_SAI
@@ -99,9 +100,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,----+----+----+----+----+----.              ,----+----+----+----+----+----.
          ,    ,    ,    ,    ,    ,               PLAI,BREA,RAIN,    ,    ,    ,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-     RTOG,RMOD,RHUI,RSAI,RVAI,RSPI,               SWIL,SNAK,KNIT,    ,    ,PSCR,
+     RTOG,MOD,RHUI,RSAI,RVAI,RSPI,               SWIL,SNAK,KNIT,    ,    ,PSCR,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-         ,MOD ,RHUD,RSAD,RVAD,RSPD,               XMAS,GRAD,RGBT,    ,    ,DVOR,
+         ,RMOD ,RHUD,RSAD,RVAD,RSPD,               XMAS,GRAD,RGBT,    ,    ,DVOR,
   //|----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
      BL_S,RST ,    ,    ,    ,    ,    ,         ,    ,    ,    ,    ,    ,    ,
   //`----+----+----+--+-+----+----+----/    \----+----+----+----+----+----+----'
