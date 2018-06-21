@@ -23,8 +23,12 @@ extern keymap_config_t keymap_config;
 #define KC_DVOR TO(_DVORAK)
 #define KC_NAVI TO(_NAVIGATION)
 #define KC_RST  RESET
+
 #define KC_BL_S BL_STEP
+#define KC_BL_T BL_TOGG
+#define KC_BL_B BL_BRTG
 #define KC_DBUG DEBUG
+
 #define KC_RTOG RGB_TOG
 #define KC_RMOD RGB_MOD
 #define KC_RHUI RGB_HUI
@@ -33,6 +37,19 @@ extern keymap_config_t keymap_config;
 #define KC_RSAD RGB_SAD
 #define KC_RVAI RGB_VAI
 #define KC_RVAD RGB_VAD
+#define KC_RSPI RGB_SPI
+#define KC_RSPD RGB_SPD
+
+// RGB Individual modes
+#define KC_PLAI RGB_M_P
+#define KC_BREA RGB_M_B
+#define KC_RAIN RGB_M_R
+#define KC_SWIL RGB_M_SW
+#define KC_SNAK RGB_M_SN
+#define KC_KNIT RGB_M_K
+#define KC_XMAS RGB_M_X
+#define KC_GRAD RGB_M_G
+#define KC_RGBT RGB_M_T
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
@@ -58,7 +75,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
      LSFT,    ,LEFT,DOWN,RGHT,QUES,               EQL , P4 , P5 , P6 ,PPLS,GAME,
   //|----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
-     BL_S,    ,    ,    ,    ,SLSH,END ,         ,RPRN, P1 , P2 , P3 ,PEQL,RSFT,
+     BL_S,BL_T,BL_B,    ,    ,SLSH,END ,         ,RPRN, P1 , P2 , P3 ,PEQL,RSFT,
   //`----+----+----+--+-+----+----+----/    \----+----+----+----+----+----+----'
                            ,    ,DEL ,        SPC ,    , P0
   //                  `----+----+----'        `----+----+----'
@@ -80,11 +97,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_ADJUST] = LAYOUT_kc(
   //,----+----+----+----+----+----.              ,----+----+----+----+----+----.
-         ,    ,    ,    ,    ,    ,                   ,    ,    ,    ,    ,    ,
+         ,    ,    ,    ,    ,    ,               PLAI,BREA,RAIN,    ,    ,    ,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-     RTOG,RMOD,RHUI,RSAI,RVAI,    ,                   ,    ,    ,    ,    ,PSCR,
+     RTOG,RMOD,RHUI,RSAI,RVAI,RSPI,               SWIL,SNAK,KNIT,    ,    ,PSCR,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-         ,DBUG,RHUD,RSAD,RVAD,    ,                   ,    ,    ,    ,    ,DVOR,
+         ,MOD ,RHUD,RSAD,RVAD,RSPD,               XMAS,GRAD,RGBT,    ,    ,DVOR,
   //|----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
      BL_S,RST ,    ,    ,    ,    ,    ,         ,    ,    ,    ,    ,    ,    ,
   //`----+----+----+--+-+----+----+----/    \----+----+----+----+----+----+----'
