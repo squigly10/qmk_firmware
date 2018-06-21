@@ -16,6 +16,7 @@ extern keymap_config_t keymap_config;
 #define KC_ KC_TRNS
 #define _______ KC_TRNS
 
+// Navigation
 #define KC_ADJT TO(_ADJUST)
 #define KC_RASE MO(_RAISE)
 #define KC_GAME TO(_GAME)
@@ -29,6 +30,7 @@ extern keymap_config_t keymap_config;
 #define KC_BL_B BL_BRTG
 #define KC_DBUG DEBUG
 
+// RGB Multi-Modes
 #define KC_RTOG RGB_TOG
 #define KC_RMOD RGB_RMOD
 #define KC_MOD  RGB_MOD
@@ -70,7 +72,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_LOWER] = LAYOUT_kc(
   //,----+----+----+----+----+----.              ,----+----+----+----+----+----.
-     TILD,EXLM, AT ,HASH,DLR ,PERC,               CIRC,AMPR,ASTR,LPRN,RPRN,BSPC,
+     TILD,EXLM, AT ,HASH,DLR ,PERC,               CIRC,AMPR,ASTR,SLSH,RPRN,BSPC,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
      RST , 1  , 2  , UP , 4  , 5  ,               NAVI, P7 , P8 , P9 ,PMNS,BSLS,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
@@ -88,9 +90,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
      TAB ,EXLM, AT ,HASH,DLR ,LPRN,               RPRN,AMPR,ASTR,LPRN,RPRN,BSLS,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-     LSFT,MPRV,MNXT,VOLU,PGUP,LCBR,               RCBR,HOME,    ,    ,    ,SLSH,
+     LSFT,MPRV,MNXT,VOLU,PGUP,LCBR,               RCBR,HOME,PSCR,    ,    ,SLSH,
   //|----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
-     MUTE,MSTP,MPLY,VOLD,PGDN,LBRC,END ,         ,RBRC,END ,    ,    ,ADJT,RSFT,
+     MUTE,MSTP,MPLY,VOLD,PGDN,LBRC,END ,         ,RBRC,END ,APP ,    ,ADJT,RSFT,
   //`----+----+----+--+-+----+----+----/    \----+----+----+----+----+----+----'
                            ,    ,    ,        SPC ,    ,
   //                  `----+----+----'        `----+----+----'
@@ -100,9 +102,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,----+----+----+----+----+----.              ,----+----+----+----+----+----.
          ,    ,    ,    ,    ,    ,               PLAI,BREA,RAIN,    ,    ,    ,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-     RTOG,MOD,RHUI,RSAI,RVAI,RSPI,               SWIL,SNAK,KNIT,    ,    ,PSCR,
+     RTOG,MOD ,RHUI,RSAI,RVAI,RSPI,               SWIL,SNAK,KNIT,    ,    ,PSCR,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-         ,RMOD ,RHUD,RSAD,RVAD,RSPD,               XMAS,GRAD,RGBT,    ,    ,DVOR,
+         ,RMOD,RHUD,RSAD,RVAD,RSPD,               XMAS,GRAD,RGBT,    ,    ,DVOR,
   //|----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
      BL_S,RST ,    ,    ,    ,    ,    ,         ,    ,    ,    ,    ,    ,    ,
   //`----+----+----+--+-+----+----+----/    \----+----+----+----+----+----+----'
