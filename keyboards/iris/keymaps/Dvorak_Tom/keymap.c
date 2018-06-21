@@ -16,7 +16,7 @@ extern keymap_config_t keymap_config;
 #define KC_ KC_TRNS
 #define _______ KC_TRNS
 
-#define KC_ADJT MO(_ADJUST)
+#define KC_ADJT TO(_ADJUST)
 #define KC_RASE MO(_RAISE)
 #define KC_GAME TO(_GAME)
 #define KC_LOWR MO(_LOWER)
@@ -60,7 +60,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
      BL_S,    ,    ,    ,    ,SLSH,END ,         ,RPRN, P1 , P2 , P3 ,PEQL,RSFT,
   //`----+----+----+--+-+----+----+----/    \----+----+----+----+----+----+----'
-                           ,    ,DEL ,        SPC ,ADJT, P0
+                           ,    ,DEL ,        SPC ,    , P0
   //                  `----+----+----'        `----+----+----'
   ),
 
@@ -72,7 +72,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
      LSFT,MPRV,MNXT,VOLU,PGUP,LCBR,               RCBR,HOME,    ,    ,    ,SLSH,
   //|----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
-     MUTE,MSTP,MPLY,VOLD,PGDN,LBRC,END ,         ,RBRC,END ,    ,    ,    ,RSFT,
+     MUTE,MSTP,MPLY,VOLD,PGDN,LBRC,END ,         ,RBRC,END ,    ,    ,ADJT,RSFT,
   //`----+----+----+--+-+----+----+----/    \----+----+----+----+----+----+----'
                            ,    ,    ,        SPC ,    ,
   //                  `----+----+----'        `----+----+----'
@@ -84,7 +84,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
      RTOG,RMOD,RHUI,RSAI,RVAI,    ,                   ,    ,    ,    ,    ,PSCR,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-         ,DBUG,RHUD,RSAD,RVAD,    ,                   ,    ,    ,    ,    ,    ,
+         ,DBUG,RHUD,RSAD,RVAD,    ,                   ,    ,    ,    ,    ,DVOR,
   //|----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
      BL_S,RST ,    ,    ,    ,    ,    ,         ,    ,    ,    ,    ,    ,    ,
   //`----+----+----+--+-+----+----+----/    \----+----+----+----+----+----+----'
